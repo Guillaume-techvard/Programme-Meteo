@@ -1,0 +1,47 @@
+// Code responsable de de comment apparaisse visuellement les taches lorsqu'elles sont creer.
+main ul {
+  list-style: none;
+  padding: 0;
+}
+
+main li {
+  background: #444; /* Fond des tâches */
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  color: #fff; /* Texte des tâches en blanc */
+}
+
+// Classe permettant de donner un visuel different losque la tache est dite "completee"
+main li.completed {
+  color: #00f87c;
+}
+
+// Design du bouton d'ajout de tache.
+main li button {
+  align-self: flex-end;
+  border: none;
+  background: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+main li button:hover {
+  background: #c82333;
+}
+
+#clearAllTasksButton {
+  display: none;
+  border-radius: 5px;
+  background: red;
+  outline: none;
+  border: 1px;
+  padding: 10px;
+  &:hover {
+    background: whitesmoke;
+  }
+}
